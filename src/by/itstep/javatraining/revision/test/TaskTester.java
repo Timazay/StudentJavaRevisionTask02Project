@@ -7,6 +7,10 @@ public class TaskTester {
     public static String RIGHT = "completed successfully. WELL DONE!!!";
     public static String WRONG = "was not running successfully. Something was WRONG!";
 
+    private static String getResult(String task, boolean result) {
+        return task + " " + (result ? RIGHT : WRONG);
+    }
+
     public static String testingTask01() {
         boolean result = Task01.task01(10, 15) == 15
                 && Task01.task01(40, 25) == 40
@@ -15,7 +19,7 @@ public class TaskTester {
                 && Task01.task01(-40, 25) == 25
                 && Task01.task01(-7, -7) == -7;
 
-        return String.format("Task 01 %s", result ? RIGHT : WRONG);
+        return getResult("Task 01", result);
     }
 
     public static String testingTask02() {
@@ -26,7 +30,7 @@ public class TaskTester {
                 && Task02.task02(-6, 5) == 2
                 && Task02.task02(-5, -5) == 0;
 
-        return String.format("Task 02 %s", result ? RIGHT : WRONG);
+        return getResult("Task 02", result);
     }
 
     public static String testingTask03() {
@@ -47,7 +51,7 @@ public class TaskTester {
                 && !Task03.task03(0, 0, 0)
                 && !Task03.task03(-1, -1, -1);
 
-        return String.format("Task 03 %s", result ? RIGHT : WRONG);
+        return getResult("Task 03", result);
     }
 
     public static String testingTask04() {
@@ -78,7 +82,7 @@ public class TaskTester {
                 && !Task04.task04(3, 3, 0, 3)
                 && !Task04.task04(3, 3, 2, 0);
 
-        return String.format("Task 04 %s", result ? RIGHT : WRONG);
+        return getResult("Task 04", result);
     }
 
     public static String testingTask05() {
@@ -104,7 +108,7 @@ public class TaskTester {
                 && Task05.task05(1, 15, 0).trim().equalsIgnoreCase("error")
                 && Task05.task05(0, 0, 0).trim().equalsIgnoreCase("error");
 
-        return String.format("Task 05 %s", result ? RIGHT : WRONG);
+        return getResult("Task 05", result);
     }
 
     public static String testingTask06() {
@@ -122,7 +126,7 @@ public class TaskTester {
                 && !Task06.task06(3, 4, -5)
                 && !Task06.task06(-1, -1, -1);
 
-        return String.format("Task 06 %s", result ? RIGHT : WRONG);
+        return getResult("Task 06", result);
     }
 
     public static String testingTask07() {
@@ -144,6 +148,6 @@ public class TaskTester {
                 && Task07.task07(-9000) == 9
                 && Task07.task07(9999) == 36;
 
-        return String.format("Task 07 %s", result ? RIGHT : WRONG);
+        return getResult("Task 07", result);
     }
 }
