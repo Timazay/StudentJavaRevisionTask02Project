@@ -32,7 +32,7 @@ package by.itstep.javatraining.revision.task;
  */
 
 public class Task04 {
-    public static boolean task04(int width, int length, int a, int b) {
+    public static boolean start(int width, int length, int a, int b) {
         return false;
     }
 }

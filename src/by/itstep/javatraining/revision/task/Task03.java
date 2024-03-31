@@ -26,7 +26,7 @@ package by.itstep.javatraining.revision.task;
  */
 
 public class Task03 {
-    public static boolean task03(int width, int length, int side) {
+    public static boolean start(int width, int length, int side) {
         return false;
     }
 }

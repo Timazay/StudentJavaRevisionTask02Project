@@ -15,7 +15,7 @@ package by.itstep.javatraining.revision.task;
  *
  *	Формат выходных данных [output]
  *	Метод должен возвратить в виде строки два числа через пробел (стоимость покупки в рублях и копейках)
- *	или строку "error", если передаюся неверные данные
+ *	или строку "error", если передаюся неверные данные.
  *
  *	[Sample method input  1]: 1 15 2
  *	[Sample method output 1]: 2 30
@@ -53,7 +53,7 @@ package by.itstep.javatraining.revision.task;
  */
 
 public class Task05 {
-    public static String task05(int a, int b, int n) {
+    public static String start(int a, int b, int n) {
         return "error";
     }
 }
