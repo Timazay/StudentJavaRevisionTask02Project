@@ -43,7 +43,5 @@ package by.itstep.javatraining.revision.task;
  */
 
 public class TaskX {
-    public static int start(int a, int b) {
-        return 0;
-    }
+    public static int start(int a, int b) {return 0;}
 }

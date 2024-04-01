@@ -26,6 +26,12 @@ package by.itstep.javatraining.revision.task;
 
 public class Task01 {
     public static int start(int a, int b) {
-        return 0;
+        int result = b;
+
+        if (a > b){
+            result = a;
+        }
+
+        return result;
     }
 }

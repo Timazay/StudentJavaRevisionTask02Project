@@ -54,6 +54,21 @@ package by.itstep.javatraining.revision.task;
 
 public class Task05 {
     public static String start(int a, int b, int n) {
-        return "error";
+        if (a < 0 || b < 0 || n <= 0 || a == 0 && b == 0) {
+            return "error";
+        }
+        int tempA = a;
+        int tempB = b;
+
+        for (int i = 1; i < n; i++) {
+            a += tempA;
+            b += tempB;
+            if (b >= 100){
+                a += 1;
+                b -= 100;
+            }
+        }
+        return a + " " + b;
     }
+
 }

@@ -1,6 +1,7 @@
 package by.itstep.javatraining.revision.test;
 
 import by.itstep.javatraining.revision.task.*;
+import org.junit.Test;
 
 public class TaskTester {
 
